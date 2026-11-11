@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@nodedr-restaurant/types": [
+        "./packages/types/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "main.tsx",
+    "router.tsx",
+    "components/**/*.tsx",
+    "components/**/*.ts",
+    "hooks/**/*.ts",
+    "hooks/**/*.tsx",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "app/**/*.tsx",
+    "packages/types/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "app/layout.tsx",
+    "app/kiosk/[token]/layout.tsx",
+    "lib/**/*.test.ts"
+  ]
+}
